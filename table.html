@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jednoduchá tabulka</title>
+    <style>
+        table {
+            width: 60%;
+        }
+        table, th, td {
+            border: 1px solid #888;
+            border-collapse: collapse;
+        }
+        .flag {
+            height: 20px;
+        }
+        td, th {
+            padding: 5px;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .gold {
+            background-color: gold;
+        }
+        .silver {
+            background-color: silver;
+        }
+        .bronze {
+            background-color: #cd7f32;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jednoduchá tabulka v HTML</h1>
+    <table>
+        <caption>Sjezd mužů - pořadí</caption>
+        <thead>
+            <tr>
+                <th>Umístění</th>
+                <th>Jméno</th>
+                <th>Stát</th>
+                <th>Čas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="gold">
+                <td class="center bold">1.</td>
+                <td class="bold">Feuz</td>
+                <td class="bold"><img src="sui.png" alt="Vlajka Švýcarska" class="flag"> SUI</td>
+                <td class="right bold">1:42.69</td>
+            </tr>
+            <tr class="silver">
+                <td class="center">2.</td>
+                <td>Clarey</td>
+                <td><img src="fra.png" alt="Vlajka Francie" class="flag"> FRA</td>
+                <td class="right">1:42.79</td>
+            </tr>
+            <tr class="bronze">
+                <td class="center">3.</td>
+                <td>Mayer</td>
+                <td><img src="aut.png" alt="Vlajka Rakouska" class="flag"> AUT</td>
+                <td class="right">1:42.85</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Zimní olympijské hry Peking 2022</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
